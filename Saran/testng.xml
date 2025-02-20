@@ -7,9 +7,51 @@
   <parameter name="browser" value="chrome"></parameter> 
    <test thread-count="5" name="Test"> 
  	  <classes> 
- 		<!--   <class name="testScript.AdminUserTest"> 
- 		 
- 		  </class> -->
+ 		<!--  <class name="testScript.LoginPageTestCase1" />
+         <class name="testScript.NewRoleTestCase3" /> 
+
+         <class name="testScript.PasswordChangeTestcase2" />
+        
+        <class name="testScript.NewuserTestCase4" />
+         
+           
+           <class name="testScript.ComplaintPaneNewComplaintTestCase5" />
+           <class name="testScript.ComplaintpaneupdateTestCase5" />-->
+         <!-- <class name="testScript.ComplaintPaneNewComplaintTestCase5" />-->
+             <!-- <class name="testScript.ComplaintPaneListingTestCase5" />
+             <class name="testScript.ComplaintviewingTestCase5" />-->
+             <!--<class name="testScript.NewComplaintScriptTestCase5" />-->
+              <!-- <class name="testScript.LinkListingscriptTestCase6" />
+             <class name="testScript.ViewingLinksTestscriptTestCase6" />
+              <class name="testScript.UpdateLinkScriptTestCase6" />-->
+              <!-- <class name="testScript.NewLinkScriptTestCase6" />-->
+              <!-- <class name="testScript.CreateRoleScriptTestCase7" />
+               <class name="testScript.DeleteRoleScriptTestCase7" /> 
+              <class name="testScript.UpdateRoleScriptTestCase7" />
+              <class name="testScript.CreateUserScriptTestCase7" />
+             <class name="testScript.DeleteUserScriptTestCase7" />
+              <class name="testScript.UpdateUserScriptTestCase7" />
+              <class name="testScript.FilteringByScript_ComplaintTestCase9" />
+              <class name="testScript.FilteringBy_LinkScriptTestCase9" />
+              <class name="testScript.MappingcktLinksScriptTestCase8" />
+              <class name="testScript.PrivateCommentsScriptTestCase10" />
+              <class name="testScript.ComparisonofAdminScriptTestCase10" />
+              <class name="testScript.ComparisonofUserScriptTestCase10" />
+               <class name="testScript.ComplaintDescriptionScriptTestCase11" />
+                <class name="testScript.FollowUpDescriptionScriptTestCase11" />
+                 <class name="testScript.AutoClosureTicketScriptTestCase13" />
+                 <class name="testScript.CheckTicketClosedScriptTestCase13" />
+                 <class name="testScript.LinkDownTimeScriptOccurrenceTestCase15" />
+                 <class name="testScript.LiveUserScriptTestCase16" />
+                  <class name="testScript.RemainingSLAScriptTestCase19" />
+                 
+                 <class name="testScript.EmailIntegrationScriptTestCase17" />
+              <class name="testScript.TimeDurationScriptTestCase20" />
+              <class name="testScript.DailyReportScriptTestCase21" />
+               <class name="testScript.DailyReportWithAdvancedFiltersScriptTestCase21" />
+               <class name="testScript.WeeklyReportScriptTestCase21" />
+               <class name="testScript.MonthlyReportScriptTestCase21" />-->
+               <class name="testScript.NewTicketScriptTestCase5" />
  		   
  	  </classes> 
    </test> <!-- Test -->
