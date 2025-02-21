@@ -1,5 +1,6 @@
 package pages;
 
+import java.awt.AWTException;
 import java.time.Duration;
 import java.util.List;
 
@@ -7,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -68,7 +70,7 @@ public class NewTicketTestCase5 {
 	}
 
 	public void editnewTIcketform(String title, String complaintdescription, String assignee, String category,
-			String complaintpriority, String source, String id, String teamdropdown) throws InterruptedException {
+			String complaintpriority, String source, String id, String teamdropdown,String esclregion,String escllocation,String reasonforoccurrence,String subreasonforoccurrence,String caller_name,String caller_email,String caller_mobile,String caller_landline) throws InterruptedException {
 		// wait for complaint title
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement complainttiltle = driver.findElement(By.xpath("//input[@name=\"title\"]"));
@@ -179,15 +181,79 @@ public class NewTicketTestCase5 {
 		} 
 		}
 	    
-	    String escalatedtovalue="ERTCC";
+//	    String escalatedtovalue="ERTCC";
+//	    WebDriverWait waitescalatedto = new WebDriverWait(driver, Duration.ofSeconds(30)); 
+//	    WebElement escalatedto=waitescalatedto.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class=\"selected tree_select_area\"])[2]")));
+//	    //escalatedto.click();
+//	    // Scroll into view
+//	    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", escalatedto);
+//
+//	    // Click using JavaScript
+//	    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", escalatedto);
+//	    JavascriptExecutor jst = (JavascriptExecutor) driver;
+//	    List<WebElement> esclatedtooptions = driver.findElements(By.xpath("//ul[@class='jstree-container-ul jstree-children jstree-striped jstree-contextmenu']//a"));
+//	    System.out.println("Number of options found: " + esclatedtooptions.size());
+//
+//	    // Iterate through options
+//	    for (WebElement elements : esclatedtooptions) {
+//	        // Use JavaScript to extract inner text
+//	        String visibleText = (String) jst.executeScript("return arguments[0].innerText;", elements);
+//	        System.out.println("Row text: " + visibleText.trim());
+//
+//	        // Check if this is the desired element
+//	        if (visibleText.trim().equals(escalatedtovalue)) {
+//	            System.out.println("Clicking: " + visibleText.trim());
+//
+////	            WebDriverWait waitForClick = new WebDriverWait(driver, Duration.ofSeconds(10));
+////	            waitForClick.until(ExpectedConditions.elementToBeClickable(elements));
+//	            
+//	            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", elements);
+//	            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", elements);
+//
+////	            WebDriverWait waitee = new WebDriverWait(driver, Duration.ofSeconds(30));
+////	            //WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//i[@class='jstree-icon jstree-ocl'])[1]")));
+////	            WebElement arrow = waitee.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@role='presentation'])[9]")));
+////	         // Scroll into view
+////	            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", arrow);
+////
+////	            // Ensure it's visible and clickable
+////	            wait.until(ExpectedConditions.elementToBeClickable(arrow));
+////	            if (arrow.isDisplayed() && arrow.isEnabled()) {
+////	                //arrow.click();
+////	            	((JavascriptExecutor) driver).executeScript("arguments[0].click();", arrow);
+////
+////	                WebDriverWait waiteee = new WebDriverWait(driver, Duration.ofSeconds(30));
+////		            //WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//i[@class='jstree-icon jstree-ocl'])[1]")));
+////		            WebElement opt = waiteee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[normalize-space()='AKUSINGH'])[1]")));
+////		            opt.click();
+////	            } else {
+////	                System.out.println("Arrow is not visible or interactable.");
+////	            }
+////
+////
+////	            break;
+//	            
+//	            
+//	            
+//	            List<WebElement> elementss = driver.findElements(By.xpath("(//i[@role='presentation'])[9]"));
+//	            if (!elementss.isEmpty()) {  // Check if the element is found
+//	                WebElement arrow = elementss.get(0);
+//	                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", arrow);
+//	                arrow.click();
+//	            } else {
+//	                System.out.println("Element not found, but continuing execution.");
+//	            }
+//
+//
+//	        }
+//	    }
+	    
+
+	    
+	    String escalatedtovalue=esclregion;
 	    WebDriverWait waitescalatedto = new WebDriverWait(driver, Duration.ofSeconds(30)); 
 	    WebElement escalatedto=waitescalatedto.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class=\"selected tree_select_area\"])[2]")));
-	    //escalatedto.click();
-	    // Scroll into view
-	    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", escalatedto);
-
-	    // Click using JavaScript
-	    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", escalatedto);
+	    escalatedto.click();
 	    JavascriptExecutor jst = (JavascriptExecutor) driver;
 	    List<WebElement> esclatedtooptions = driver.findElements(By.xpath("//ul[@class='jstree-container-ul jstree-children jstree-striped jstree-contextmenu']//a"));
 	    System.out.println("Number of options found: " + esclatedtooptions.size());
@@ -202,51 +268,157 @@ public class NewTicketTestCase5 {
 	        if (visibleText.trim().equals(escalatedtovalue)) {
 	            System.out.println("Clicking: " + visibleText.trim());
 
-//	            WebDriverWait waitForClick = new WebDriverWait(driver, Duration.ofSeconds(10));
-//	            waitForClick.until(ExpectedConditions.elementToBeClickable(elements));
-	            
-	            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", elements);
-	            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", elements);
-
-//	            WebDriverWait waitee = new WebDriverWait(driver, Duration.ofSeconds(30));
-//	            //WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//i[@class='jstree-icon jstree-ocl'])[1]")));
-//	            WebElement arrow = waitee.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@role='presentation'])[9]")));
-//	         // Scroll into view
-//	            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", arrow);
-//
-//	            // Ensure it's visible and clickable
-//	            wait.until(ExpectedConditions.elementToBeClickable(arrow));
-//	            if (arrow.isDisplayed() && arrow.isEnabled()) {
-//	                //arrow.click();
-//	            	((JavascriptExecutor) driver).executeScript("arguments[0].click();", arrow);
-//
-//	                WebDriverWait waiteee = new WebDriverWait(driver, Duration.ofSeconds(30));
-//		            //WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//i[@class='jstree-icon jstree-ocl'])[1]")));
-//		            WebElement opt = waiteee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[normalize-space()='AKUSINGH'])[1]")));
-//		            opt.click();
-//	            } else {
-//	                System.out.println("Arrow is not visible or interactable.");
-//	            }
-//
-//
-//	            break;
-	            
-	            
-	            
-	            List<WebElement> elementss = driver.findElements(By.xpath("(//i[@role='presentation'])[9]"));
-	            if (!elementss.isEmpty()) {  // Check if the element is found
-	                WebElement arrow = elementss.get(0);
-	                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", arrow);
+	            WebDriverWait waitForClick = new WebDriverWait(driver, Duration.ofSeconds(10));
+	            waitForClick.until(ExpectedConditions.elementToBeClickable(elements));
+	            //((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elements);
+	            //elements.click();
+//	            WebDriverWait waitarrow = new WebDriverWait(driver, Duration.ofSeconds(30)); 
+//	    	    WebElement arrow=waitescalatedto.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='jstree-icon jstree-ocl'])[1]")));
+//	    	   // arrow.click();
+//	    	    Actions actions = new Actions(driver);
+//	    	    actions.moveToElement(arrow).click().perform();
+	            WebDriverWait waitee = new WebDriverWait(driver, Duration.ofSeconds(30));
+	            //WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//i[@class='jstree-icon jstree-ocl'])[1]")));
+	            //WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//i[@role='presentation'])[9]")));
+	            WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(), '"+escalatedtovalue+"')]/preceding-sibling::i")));
+	          
+	            if (arrow.isDisplayed() && arrow.isEnabled()) {
 	                arrow.click();
+	                WebDriverWait waiteee = new WebDriverWait(driver, Duration.ofSeconds(30));
+		            //WebElement arrow = waitee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//i[@class='jstree-icon jstree-ocl'])[1]")));
+		            WebElement opt = waiteee.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[normalize-space()='"+escllocation+"'])[1]")));
+		            opt.click();
 	            } else {
-	                System.out.println("Element not found, but continuing execution.");
+	                System.out.println("Arrow is not visible or interactable.");
 	            }
 
 
+	            break;
 	        }
 	    }
 	    
-	    
+	  //clicking reason for occurrence
+	  		WebDriverWait waitreasonoccu=new WebDriverWait(driver, Duration.ofSeconds(30));
+	  		WebElement dropdown=waitreasonoccu.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//select[@name='38_cusID']")));
+	  		dropdown.click();
+	  		Select selectdropdown=new Select(dropdown);
+	  		selectdropdown.selectByVisibleText(reasonforoccurrence);
+	  		
+	  		
+	  		WebElement subreasonoccurrence1=driver.findElement(By.xpath("//input[@id='54_cusID']"));
+	  		subreasonoccurrence1.clear();
+	  		subreasonoccurrence1.sendKeys(subreasonforoccurrence);
+	  
+	  		
+	  	//callers personal info
+			WebDriverWait waitpesonalinfo=new WebDriverWait(driver, Duration.ofSeconds(30));
+			WebElement name=waitpesonalinfo.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name=\"12_cusID_16\"]")));
+			name.clear();
+			name.sendKeys(caller_name);
+			WebElement email=waitpesonalinfo.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='13_cusID_16']")));
+			email.clear();
+			email.sendKeys(caller_email);
+			WebElement mobile=waitpesonalinfo.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='14_cusID_16']")));
+			mobile.clear();
+			mobile.sendKeys(caller_mobile);
+			WebElement landline=waitpesonalinfo.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='15_cusID_16']")));
+			landline.clear();
+			landline.sendKeys(caller_landline);
+			
+	//
 
 	}
-}
+		//class for uploading file
+		public void robotclass(String descriptionforupdate) throws AWTException
+		{
+
+		    String currenturl=driver.getCurrentUrl();
+		    System.out.println(currenturl);
+
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebElement addfile=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"addFile\"]")));
+			addfile.click();
+			WebElement choosefile=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"fileUpload_1\"]")));
+			choosefile.sendKeys("C:\\Users\\Neethu\\Downloads\\test.txt");
+			WebElement description=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@class=\"form-control input-sm\"]")));
+			description.sendKeys(descriptionforupdate);
+
+			
+		}
+		//class for observertagupdate buttons
+		public void observerTagUpdate(String observername)
+		{
+//			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+//			WebElement observer=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space(text())='Observer']")));
+			
+			JavascriptExecutor jsscrolldown=(JavascriptExecutor) driver;
+			 WebElement observer = driver.findElement(By.xpath("//a[normalize-space(text())='Observer']"));
+			    jsscrolldown.executeScript("arguments[0].scrollIntoView(true);", observer);
+			Actions action=new Actions(driver);
+			action.click(observer).perform();
+			//select from the observers
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+
+			// Find the scrollable container
+			WebElement scrollableContainer = driver.findElement(By.xpath("//ul[@class='ms-list']"));
+
+			
+			List<WebElement> observerlist = driver.findElements(By.xpath("//ul[@class='ms-list']//li"));
+		    System.out.println("Number of options found: " + observerlist.size());
+		    JavascriptExecutor jst = (JavascriptExecutor) driver;
+
+		    // Iterate through options
+		    for (WebElement elements : observerlist) {
+		        // Use JavaScript to extract inner text
+		        String visibleText = (String) jst.executeScript("return arguments[0].innerText;", elements);
+		        //System.out.println("Row text: " + visibleText.trim());
+
+		        // Check if this is the desired element
+		        if (visibleText.trim().equals(observername)) {
+		            System.out.println("Clicking: " + visibleText.trim());
+
+		            WebDriverWait waitForClick = new WebDriverWait(driver, Duration.ofSeconds(10));
+		            waitForClick.until(ExpectedConditions.elementToBeClickable(elements));
+		            //((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elements);
+		            elements.click();
+			//WebDriverWait waitForClick = new WebDriverWait(driver, Duration.ofSeconds(10));
+		            WebElement savechanges=waitForClick.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//button[normalize-space(text())='Save changes'])[1]")));
+
+		            savechanges.click();
+		           
+		            break;
+		        }
+
+		}
+		    //tag button
+		    WebElement tags=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[normalize-space(text())='Tag'])[1]")));
+		    JavascriptExecutor jtag = (JavascriptExecutor) driver;
+		    jtag.executeScript("arguments[0].scrollIntoView(true);", tags);
+	        tags.click();
+	        
+	        //checkbox for tag
+	        WebElement checkbox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"my_multi_selectTag\"]")));
+	        checkbox.click();
+	        
+	        //save the tag
+	        WebElement savechanges1=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@onclick=\"loadTags()\"]")));
+	        savechanges1.click();
+	        
+	        //save button for complaint
+	        WebElement save=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='btnSave']")));
+	        save.click();
+	        
+//	        //to assure saved or not
+//	        WebElement assureupdate=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(normalize-space(), \"Saved by \")]")));
+//	     // Check if the element is displayed and contains the desired text
+//	        if (assureupdate.isDisplayed() && assureupdate.getText().contains("Saved by")) {
+//	            System.out.println("Save message is displayed: " + assureupdate.getText());
+//	        } else {
+//	            System.out.println("Save message is not displayed or does not match.");
+//	        }
+	        
+		}
+
+	}
+
