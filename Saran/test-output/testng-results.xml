@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-21T11:12:51 IST" name="Suite" finished-at="2025-02-21T11:13:07 IST" duration-ms="15663">
+  <suite started-at="2025-03-14T15:14:18 IST" name="Suite" finished-at="2025-03-14T15:14:30 IST" duration-ms="11917">
     <groups>
     </groups>
-    <test started-at="2025-02-21T11:12:51 IST" name="Test" finished-at="2025-02-21T11:13:07 IST" duration-ms="15663">
-      <class name="testScript.NewTicketScriptTestCase5">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.NewTicketScriptTestCase5@70ed52de]" started-at="2025-02-21T11:12:51 IST" name="initializeBrowser" finished-at="2025-02-21T11:12:53 IST" duration-ms="1762" status="PASS">
+    <test started-at="2025-03-14T15:14:18 IST" name="Test" finished-at="2025-03-14T15:14:30 IST" duration-ms="11917">
+      <class name="testScript.AttachmentOptionScriptTestCase34">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.AttachmentOptionScriptTestCase34@70ed52de]" started-at="2025-03-14T15:14:18 IST" name="initializeBrowser" finished-at="2025-03-14T15:14:20 IST" duration-ms="1232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyAbleToCreateNewTicket()[pri:0, instance:testScript.NewTicketScriptTestCase5@70ed52de]" started-at="2025-02-21T11:12:53 IST" name="verifyAbleToCreateNewTicket" finished-at="2025-02-21T11:13:07 IST" duration-ms="13884" status="PASS">
+        <test-method signature="verifyAbleToUploadAttachments()[pri:0, instance:testScript.AttachmentOptionScriptTestCase34@70ed52de]" started-at="2025-03-14T15:14:20 IST" name="verifyAbleToUploadAttachments" finished-at="2025-03-14T15:14:30 IST" duration-ms="10663" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAbleToCreateNewTicket -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.NewTicketScriptTestCase5@70ed52de]" started-at="2025-02-21T11:13:07 IST" name="browserQuit" finished-at="2025-02-21T11:13:07 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyAbleToUploadAttachments -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.AttachmentOptionScriptTestCase34@70ed52de]" started-at="2025-03-14T15:14:30 IST" name="browserQuit" finished-at="2025-03-14T15:14:30 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAbleToCreateNewTicket status=SUCCESS method=NewTicketScriptTestCase5.verifyAbleToCreateNewTicket()[pri:0, instance:testScript.NewTicketScriptTestCase5@70ed52de] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAbleToUploadAttachments status=SUCCESS method=AttachmentOptionScriptTestCase34.verifyAbleToUploadAttachments()[pri:0, instance:testScript.AttachmentOptionScriptTestCase34@70ed52de] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- testScript.NewTicketScriptTestCase5 -->
+      </class> <!-- testScript.AttachmentOptionScriptTestCase34 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

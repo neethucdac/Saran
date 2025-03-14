@@ -325,7 +325,7 @@ public class NewLinkTestCase6 {
 				
 			    //tag button
 				WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
-			    WebElement tags=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[normalize-space(text())='Tags'])[1]")));
+			    WebElement tags=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Tag']")));
 			    JavascriptExecutor jtag = (JavascriptExecutor) driver;
 			    jtag.executeScript("arguments[0].scrollIntoView(true);", tags);
 		        tags.click();

@@ -23,8 +23,8 @@
              <!--<class name="testScript.NewComplaintScriptTestCase5" />-->
               <!-- <class name="testScript.LinkListingscriptTestCase6" />
              <class name="testScript.ViewingLinksTestscriptTestCase6" />
-              <class name="testScript.UpdateLinkScriptTestCase6" />-->
-              <!-- <class name="testScript.NewLinkScriptTestCase6" />-->
+              <class name="testScript.UpdateLinkScriptTestCase6" />
+               <class name="testScript.NewLinkScriptTestCase6" />-->
               <!-- <class name="testScript.CreateRoleScriptTestCase7" />
                <class name="testScript.DeleteRoleScriptTestCase7" /> 
               <class name="testScript.UpdateRoleScriptTestCase7" />
@@ -50,8 +50,23 @@
               <class name="testScript.DailyReportScriptTestCase21" />
                <class name="testScript.DailyReportWithAdvancedFiltersScriptTestCase21" />
                <class name="testScript.WeeklyReportScriptTestCase21" />
-               <class name="testScript.MonthlyReportScriptTestCase21" />-->
-               <class name="testScript.NewTicketScriptTestCase5" />
+               <class name="testScript.MonthlyReportScriptTestCase21" />
+               <class name="testScript.NewTicketScriptTestCase5" />-->
+               
+               <!--<class name="testScript.NewLinkCreationScriptTestCase6" />
+               <class name="testScript.AuditLoginUserScriptTestCase23" />
+               <class name="testScript.AuditLogTicketCreateScriptTestCase23" />
+               
+                <class name="testScript.AuditLogTicketUpdateScriptTestCase23" />
+                
+                 <class name="testScript.AuditLogTicketDeleteScriptTestCase23" />
+                
+				<class name="testScript.LogsOneYearScriptTestCase24" />
+				<class name="testScript.LinkDownTimeOccurrenceforTicketScriptTestCase32" />-->
+				<class name="testScript.AttachmentOptionScriptTestCase34" />
+				
+               
+               
  		   
  	  </classes> 
    </test> <!-- Test -->
