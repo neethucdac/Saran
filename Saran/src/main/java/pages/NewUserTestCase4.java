@@ -56,12 +56,18 @@ public class NewUserTestCase4 {
 	}
 	public void clickUser()
 	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		
 		user.click();
 	}
 	public void createUser()
 	{
 		//createuser.click();
-		plussign.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 Actions actions = new Actions(driver);
+	        actions.doubleClick(plussign).perform();
+	       
+		//plussign.click();
 	}
 	public void enterDetailsForCreatingUser(String newname,String preferduser,String nemail,String phoneno,String descr,String userPassword,String retypepassword,String mobile,String uaddress)
 	{
