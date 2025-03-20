@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-20T10:19:59 IST" name="Suite" finished-at="2025-03-20T10:20:25 IST" duration-ms="26669">
+  <suite started-at="2025-03-20T10:58:52 IST" name="Suite" finished-at="2025-03-20T10:59:22 IST" duration-ms="30400">
     <groups>
     </groups>
-    <test started-at="2025-03-20T10:19:59 IST" name="Test" finished-at="2025-03-20T10:20:25 IST" duration-ms="26669">
-      <class name="testScript.NewuserTestCase4">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.NewuserTestCase4@35841320]" started-at="2025-03-20T10:19:59 IST" name="initializeBrowser" finished-at="2025-03-20T10:20:02 IST" duration-ms="2853" status="PASS">
+    <test started-at="2025-03-20T10:58:52 IST" name="Test" finished-at="2025-03-20T10:59:22 IST" duration-ms="30400">
+      <class name="testScript.NewRoleTestCase3">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.NewRoleTestCase3@3de8f619]" started-at="2025-03-20T10:58:54 IST" name="initializeBrowser" finished-at="2025-03-20T10:58:55 IST" duration-ms="881" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,110 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyNewUserCreate()[pri:0, instance:testScript.NewuserTestCase4@35841320]" started-at="2025-03-20T10:20:02 IST" name="verifyNewUserCreate" finished-at="2025-03-20T10:20:25 IST" duration-ms="23667" status="FAIL">
+        <test-method signature="verifyUserAbleToAddNewUserRole()[pri:0, instance:testScript.NewRoleTestCase3@3de8f619]" started-at="2025-03-20T10:58:55 IST" name="verifyUserAbleToAddNewUserRole" finished-at="2025-03-20T10:58:56 IST" duration-ms="911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToAddNewUserRole -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.NewRoleTestCase3@3de8f619]" started-at="2025-03-20T10:58:56 IST" name="browserQuit" finished-at="2025-03-20T10:58:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserAbleToAddNewUserRole status=SUCCESS method=NewRoleTestCase3.verifyUserAbleToAddNewUserRole()[pri:0, instance:testScript.NewRoleTestCase3@3de8f619] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScript.NewRoleTestCase3 -->
+      <class name="testScript.LoginPageTestCase1">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.LoginPageTestCase1@247310d0]" started-at="2025-03-20T10:58:52 IST" name="initializeBrowser" finished-at="2025-03-20T10:58:53 IST" duration-ms="1135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserIsAbleToLoginPage()[pri:0, instance:testScript.LoginPageTestCase1@247310d0]" started-at="2025-03-20T10:58:53 IST" name="verifyUserIsAbleToLoginPage" finished-at="2025-03-20T10:58:54 IST" duration-ms="835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginPage -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginPageTestCase1@247310d0]" started-at="2025-03-20T10:58:54 IST" name="browserQuit" finished-at="2025-03-20T10:58:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToLoginPage status=SUCCESS method=LoginPageTestCase1.verifyUserIsAbleToLoginPage()[pri:0, instance:testScript.LoginPageTestCase1@247310d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScript.LoginPageTestCase1 -->
+      <class name="testScript.PasswordChangeTestcase2">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.PasswordChangeTestcase2@2ab4bc72]" started-at="2025-03-20T10:58:56 IST" name="initializeBrowser" finished-at="2025-03-20T10:58:56 IST" duration-ms="861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserAbleToChangePassword()[pri:0, instance:testScript.PasswordChangeTestcase2@2ab4bc72]" started-at="2025-03-20T10:58:56 IST" name="verifyUserAbleToChangePassword" finished-at="2025-03-20T10:58:57 IST" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToChangePassword -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.PasswordChangeTestcase2@2ab4bc72]" started-at="2025-03-20T10:58:57 IST" name="browserQuit" finished-at="2025-03-20T10:58:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserAbleToChangePassword status=SUCCESS method=PasswordChangeTestcase2.verifyUserAbleToChangePassword()[pri:0, instance:testScript.PasswordChangeTestcase2@2ab4bc72] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testScript.PasswordChangeTestcase2 -->
+      <class name="testScript.NewuserTestCase4">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.NewuserTestCase4@4e5ed836]" started-at="2025-03-20T10:58:57 IST" name="initializeBrowser" finished-at="2025-03-20T10:58:58 IST" duration-ms="906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyNewUserCreate()[pri:0, instance:testScript.NewuserTestCase4@4e5ed836]" started-at="2025-03-20T10:58:58 IST" name="verifyNewUserCreate" finished-at="2025-03-20T10:59:22 IST" duration-ms="23711" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='User Saved Successfully'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58921/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 705dc86a930e44ffe1635040ce216b82]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63973/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed6dedb19fb4170a5cf97e71774c4654]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='User Saved Successfully'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58921/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 705dc86a930e44ffe1635040ce216b82
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63973/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed6dedb19fb4170a5cf97e71774c4654
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.NewUserTestCase4.verifyUserIsAbleToSave(NewUserTestCase4.java:146)
+at pages.NewUserTestCase4.verifyUserIsAbleToSave(NewUserTestCase4.java:161)
 at testScript.NewuserTestCase4.verifyNewUserCreate(NewuserTestCase4.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -73,20 +157,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewUserCreate -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.NewuserTestCase4@35841320]" started-at="2025-03-20T10:20:25 IST" name="browserQuit" finished-at="2025-03-20T10:20:25 IST" duration-ms="114" status="FAIL">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.NewuserTestCase4@4e5ed836]" started-at="2025-03-20T10:59:22 IST" name="browserQuit" finished-at="2025-03-20T10:59:22 IST" duration-ms="164" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyNewUserCreate status=FAILURE method=NewuserTestCase4.verifyNewUserCreate()[pri:0, instance:testScript.NewuserTestCase4@35841320] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNewUserCreate status=FAILURE method=NewuserTestCase4.verifyNewUserCreate()[pri:0, instance:testScript.NewuserTestCase4@4e5ed836] output={null}]]]>
               </value>
             </param>
           </params>
           <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyNewUserCreate20_03_2025_10_20_25.png (The system cannot find the path specified)]]>
+              <![CDATA[C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyNewUserCreate20_03_2025_10_59_22.png (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyNewUserCreate20_03_2025_10_20_25.png (The system cannot find the path specified)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyNewUserCreate20_03_2025_10_59_22.png (The system cannot find the path specified)
 at java.base/java.io.FileOutputStream.open0(Native Method)
 at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
 at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)

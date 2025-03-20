@@ -10,6 +10,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -57,15 +58,29 @@ public class NewUserTestCase4 {
 	public void clickUser()
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		
-		user.click();
+		Actions actions = new Actions(driver);
+        actions.click(user).perform();
+		//user.click();
 	}
 	public void createUser()
 	{
 		//createuser.click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		 Actions actions = new Actions(driver);
-	        actions.doubleClick(plussign).perform();
+		 int attempts = 0;
+		    while (attempts < 3) {
+		        try {
+		            Actions actions = new Actions(driver);
+		            actions.doubleClick(plussign).perform();
+		            return; // Exit if successful
+		        } catch (StaleElementReferenceException e) {
+		            System.out.println("Retrying click due to stale element...");
+		            attempts++;
+		        }
+		    }
+		    throw new RuntimeException("Failed to click element after multiple attempts");
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+//		WebElement plusSign = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='glyphicon glyphicon-plus-sign']")));
+//		 Actions actions = new Actions(driver);
+//	        actions.doubleClick(plusSign).perform();
 	       
 		//plussign.click();
 	}
