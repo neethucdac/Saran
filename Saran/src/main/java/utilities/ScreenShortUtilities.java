@@ -29,5 +29,9 @@ public class ScreenShortUtilities {
  		File finalDestination = new File(destination); 
   
  		FileHandler.copy(screenShot, finalDestination); 
+ 		File screenshotDir = new File("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Saran\\Saran\\outputScreenShot");
+ 		if (!screenshotDir.exists()) {
+ 		    screenshotDir.mkdirs();
+ 		}
  	}
 }

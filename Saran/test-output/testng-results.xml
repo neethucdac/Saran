@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-19T12:32:10 IST" name="Suite" finished-at="2025-03-19T12:32:45 IST" duration-ms="35339">
+  <suite started-at="2025-03-20T10:19:59 IST" name="Suite" finished-at="2025-03-20T10:20:25 IST" duration-ms="26669">
     <groups>
     </groups>
-    <test started-at="2025-03-19T12:32:10 IST" name="Test" finished-at="2025-03-19T12:32:45 IST" duration-ms="35339">
-      <class name="testScript.ComplaintpaneupdateTestCase5">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.ComplaintpaneupdateTestCase5@70ed52de]" started-at="2025-03-19T12:32:10 IST" name="initializeBrowser" finished-at="2025-03-19T12:32:11 IST" duration-ms="1370" status="PASS">
+    <test started-at="2025-03-20T10:19:59 IST" name="Test" finished-at="2025-03-20T10:20:25 IST" duration-ms="26669">
+      <class name="testScript.NewuserTestCase4">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.NewuserTestCase4@35841320]" started-at="2025-03-20T10:19:59 IST" name="initializeBrowser" finished-at="2025-03-20T10:20:02 IST" duration-ms="2853" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyAbleToUpdateComplaint()[pri:0, instance:testScript.ComplaintpaneupdateTestCase5@70ed52de]" started-at="2025-03-19T12:32:11 IST" name="verifyAbleToUpdateComplaint" finished-at="2025-03-19T12:32:45 IST" duration-ms="33837" status="FAIL">
+        <test-method signature="verifyNewUserCreate()[pri:0, instance:testScript.NewuserTestCase4@35841320]" started-at="2025-03-20T10:20:02 IST" name="verifyNewUserCreate" finished-at="2025-03-20T10:20:25 IST" duration-ms="23667" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (e444a0d34d040b61ec067102924cffb5)] -> xpath: //ul[@class='ms-list']//li] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='User Saved Successfully'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61543/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e444a0d34d040b61ec067102924cffb5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58921/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 705dc86a930e44ffe1635040ce216b82]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (e444a0d34d040b61ec067102924cffb5)] -> xpath: //ul[@class='ms-list']//li] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space(text())='User Saved Successfully'] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61543/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e444a0d34d040b61ec067102924cffb5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\Neethu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58921/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 705dc86a930e44ffe1635040ce216b82
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.ComplaintpaneUpdateTestCase5.observerTagUpdate(ComplaintpaneUpdateTestCase5.java:553)
-at testScript.ComplaintpaneupdateTestCase5.verifyAbleToUpdateComplaint(ComplaintpaneupdateTestCase5.java:46)
+at pages.NewUserTestCase4.verifyUserIsAbleToSave(NewUserTestCase4.java:146)
+at testScript.NewuserTestCase4.verifyNewUserCreate(NewuserTestCase4.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,21 +72,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAbleToUpdateComplaint -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.ComplaintpaneupdateTestCase5@70ed52de]" started-at="2025-03-19T12:32:45 IST" name="browserQuit" finished-at="2025-03-19T12:32:45 IST" duration-ms="102" status="FAIL">
+        </test-method> <!-- verifyNewUserCreate -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.NewuserTestCase4@35841320]" started-at="2025-03-20T10:20:25 IST" name="browserQuit" finished-at="2025-03-20T10:20:25 IST" duration-ms="114" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAbleToUpdateComplaint status=FAILURE method=ComplaintpaneupdateTestCase5.verifyAbleToUpdateComplaint()[pri:0, instance:testScript.ComplaintpaneupdateTestCase5@70ed52de] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNewUserCreate status=FAILURE method=NewuserTestCase4.verifyNewUserCreate()[pri:0, instance:testScript.NewuserTestCase4@35841320] output={null}]]]>
               </value>
             </param>
           </params>
           <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyAbleToUpdateComplaint19_03_2025_12_32_45.png (The system cannot find the path specified)]]>
+              <![CDATA[C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyNewUserCreate20_03_2025_10_20_25.png (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyAbleToUpdateComplaint19_03_2025_12_32_45.png (The system cannot find the path specified)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\Neethu\git\Saran\Saran\outputScreenShot\verifyNewUserCreate20_03_2025_10_20_25.png (The system cannot find the path specified)
 at java.base/java.io.FileOutputStream.open0(Native Method)
 at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
 at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
@@ -134,7 +134,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- testScript.ComplaintpaneupdateTestCase5 -->
+      </class> <!-- testScript.NewuserTestCase4 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
