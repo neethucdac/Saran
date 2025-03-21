@@ -7,12 +7,12 @@
   <parameter name="browser" value="chrome"></parameter> 
    <test thread-count="5" name="Test"> 
  	  <classes> 
- 		 <!--<class name="testScript.LoginPageTestCase1" />
+ 		<class name="testScript.LoginPageTestCase1" />
          <class name="testScript.NewRoleTestCase3" /> 
 
          <class name="testScript.PasswordChangeTestcase2" />
         
-        <class name="testScript.NewuserTestCase4" />-->
+        <class name="testScript.NewuserTestCase4" />
          
            
            <!-- <class name="testScript.ComplaintPaneNewComplaintTestCase5" />-->
