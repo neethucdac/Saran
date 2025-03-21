@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testScript.NewuserTestCase4">
+      <class name="testScript.ComplaintpaneupdateTestCase5">
         <methods>
           <include name="browserQuit"/>
-          <include name="verifyNewUserCreate"/>
+          <include name="verifyAbleToUpdateComplaint"/>
           <include name="initializeBrowser"/>
         </methods>
-      </class> <!-- testScript.NewuserTestCase4 -->
+      </class> <!-- testScript.ComplaintpaneupdateTestCase5 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
